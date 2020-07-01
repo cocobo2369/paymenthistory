@@ -35,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
     String date = new SimpleDateFormat(format).format(cal.getTime());
     int YEAR = cal.get(Calendar.YEAR);
     int MONTH = cal.get(Calendar.MONTH)+1;
-    int monthFirstDay = cal.getMinimum(Calendar.DATE);
-    int monthLastDay = cal.getActualMaximum (Calendar.DAY_OF_MONTH);
+
+    private int monthFirstDay = cal.getMinimum(Calendar.DATE);
+    private int monthLastDay = cal.getActualMaximum (Calendar.DAY_OF_MONTH);
 
     
 
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button btn1;
+    Button btnAccountBook;
     int WEEEKMONEY = 100000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +70,15 @@ public class MainActivity extends AppCompatActivity {
                 howMuchUsedMoney();
             }
         });
+        btnAccountBook = (Button)findViewById(R.id.buttonAccountBook);
+        btnAccountBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),AccountBookYear.class);
+                startActivity(intent);
+            }
+        });
+
         updateUsedMoneyOfMonth();
         if (!permissionGrantred()) {
             Intent intent = new Intent(
@@ -169,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
         return;
     }
 
-    private int getWeekOfYear(String date) {//일~토
+    int getWeekOfYear(String date) {//일~토
         //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.KOREA);
         Calendar calendar = Calendar.getInstance();
         if(date !="") {

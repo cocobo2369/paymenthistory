@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:stretchColumns="1">
+        <TextView
+            android:text="CBI ACCOUNT BOOK"
+            android:background="#03A9F4"
+            android:padding="3dip" />
+        <TableRow>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F44336"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month1"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="1월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month1_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"/>
+                    <TextView
+                        android:id="@+id/month1_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month1_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month1_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month1_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month1_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month1_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month1_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month1_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month1_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#9C27B0"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month2"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="2월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month2_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month2_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month2_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month2_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month2_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/month2_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month2_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month2_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month2_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3F51B5"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month3"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="3월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month3_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month3_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month3_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month3_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month3_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month3_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month3_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month3_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month3_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month3_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+        <TableRow>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#8BC34A"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month4"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="4월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month4_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month4_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month4_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month4_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month4_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month4_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month4_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month4_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/month4_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month4_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month4_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month4_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TextView
+                    android:id="@+id/month4_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="0원"
+                    tools:ignore="MissingConstraints" />
+            </TableLayout>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4CAF50"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month5"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="5월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month5_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month5_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month5_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month5_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month5_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month5_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month5_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month5_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month5_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month5_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month5_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month5_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TextView
+                    android:id="@+id/month5_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="0원"
+                    tools:ignore="MissingConstraints" />
+            </TableLayout>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CDDC39"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month6"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="6월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month6_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month6_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month6_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month6_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month6_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month6_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month6_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month6_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month6_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month6_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month6_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month6_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TextView
+                    android:id="@+id/month6_total"
+                    android:background="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0원"
+                    tools:ignore="MissingConstraints" />
+            </TableLayout>
+        </TableRow>
+        <TableRow>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2196F3"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month7"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="7월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month7_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차" />
+                    <TextView
+                        android:id="@+id/month7_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month7_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month7_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month7_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month7_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month7_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month7_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month7_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month7_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month7_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month7_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TextView
+                    android:id="@+id/month7_total"
+                    android:background="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0원"
+                    tools:ignore="MissingConstraints" />
+            </TableLayout>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#03A9F4"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month8"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="8월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month8_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month8_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month8_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month8_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month8_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month8_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month8_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month8_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month8_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month8_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month8_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month8_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00BCD4"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month9"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="9월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month9_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month9_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month9_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month9_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month9_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month9_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month9_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month9_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month9_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month9_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month9_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month9_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+
+            </TableLayout>
+        </TableRow>
+        <TableRow>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFC107"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month10"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="10월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month10_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month10_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month10_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month10_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month10_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month10_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month10_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month10_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month10_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month10_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month10_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month10_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+
+            </TableLayout>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF9800"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month11"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="11월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month11_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month11_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month11_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month11_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month11_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month11_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month11_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month11_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month11_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month11_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month11_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month11_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF5722"
+                android:orientation="horizontal"
+                android:stretchColumns="1">
+                <TextView
+                    android:id="@+id/month12"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:text="12월"
+                    tools:ignore="MissingConstraints" />
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month12_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="첫주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month12_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month12_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="둘째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month12_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month12_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="셋째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month12_money3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month12_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="넷째주차"
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month12_money4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month12_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="다섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month12_money5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/month12_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여섯째주차  "
+                        tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/month12_money6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0원"
+                        tools:ignore="MissingConstraints" />
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
