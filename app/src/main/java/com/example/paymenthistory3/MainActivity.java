@@ -30,6 +30,17 @@ import java.util.Set;
 import static android.content.ContentValues.TAG;
 
 public class MainActivity extends AppCompatActivity {
+    public enum Card30 {
+        KB(1),HD(2),SS(3);
+        private int value;
+        private Card30(int value){
+            this.value = value;
+        }
+        public int getValue(){
+            return value;
+        }
+
+    }
     Calendar cal = Calendar.getInstance();
     String format = "yyyy-MM-dd";
     String date = new SimpleDateFormat(format).format(cal.getTime());
@@ -39,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
     private int monthFirstDay = cal.getMinimum(Calendar.DATE);
     private int monthLastDay = cal.getActualMaximum (Calendar.DAY_OF_MONTH);
 
-    
+    int [] card30 = new int[5];
 
     TextView textView;
     TextView totalView;
     TextView tableTitle;
 
-    TextView weekView[] = new TextView[5];
+    TextView weekView;
 
 
     Button btn1;
@@ -143,43 +154,60 @@ public class MainActivity extends AppCompatActivity {
     public void updateUsedMoneyOfMonth(){
         int firstWeek = getWeekOfYear(makeDateFormat(YEAR,MONTH,monthFirstDay));
         int lastWeek =  getWeekOfYear(makeDateFormat(YEAR,MONTH,monthLastDay));
+        int [] weekUsedMoney = new int[7];
 
-        for(int i = firstWeek ;i <= lastWeek;i++){
+        File loadFile = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
+        String paymentInfo = null;
+        if (!loadFile.exists()) { // 폴더 없을 경우
+            loadFile.mkdir(); // 폴더 생성
+        }
+        try {
+            BufferedReader buf = new BufferedReader(
+                    new FileReader(loadFile + "/paymentHistory.txt"));
 
-            int total = 0;
-            File loadFile = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
-            String paymentInfo = null;
-            if (!loadFile.exists()) { // 폴더 없을 경우
-                loadFile.mkdir(); // 폴더 생성
-            }
-            try {
-                BufferedReader buf = new BufferedReader(
-                        new FileReader(loadFile + "/paymentHistory.txt"));
+            while((paymentInfo=buf.readLine())!=null){
+                Log.d(TAG, "onNotificationPosted ~ " + "읽는다");
+                String[] info = paymentInfo.toString().split("   ");
+                int week = getWeekOfYear(info[0]);
+                Log.d(TAG, "onNotificationPosted ~ " + "몆주차 : " +week +"  "+info[0]);
+                if(firstWeek <= week && week <= lastWeek) {
+                    int money = Integer.parseInt(info[1].replace(",", ""));
+                    weekUsedMoney[week - firstWeek + 1] += money;
 
-                int todayWeek =i;
-                while((paymentInfo=buf.readLine())!=null){
-                    Log.d(TAG, "onNotificationPosted ~ " + "읽는다");
-                    String[] temp = paymentInfo.toString().split("   ");
-                    int week = getWeekOfYear(temp[0]);
-                    Log.d(TAG, "onNotificationPosted ~ " + "몆주차 : " +week +"  "+temp[0]);
-
-                    if(todayWeek == week)
-                        total += Integer.parseInt(temp[1].replace(",",""));
+                    if (info.length > 2)
+                        updateAccept30Card(info[2], money);
                 }
-                int resId = getResources().getIdentifier("tableTextMoney"+(i-firstWeek+1),"id",this.getPackageName());
-                weekView[i-firstWeek] = (TextView)findViewById(resId);
-                weekView[i-firstWeek].setText(total+"원");
-                buf.close();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+            buf.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for(int i = 1;i <6;i++) {
+            int resId = getResources().getIdentifier("tableTextMoney" + i, "id", this.getPackageName());
+            weekView = (TextView) findViewById(resId);
+            weekView.setText(weekUsedMoney[i] + "원");
         }
 
+        for(int i = 1 ;i<=4;i++) {
+            int resId = getResources().getIdentifier("card"+i, "id", this.getPackageName());
+            weekView = (TextView) findViewById(resId);
+            if(weekView != null) weekView.setText(card30[i] + "원");
+        }
         return;
     }
 
+    public void updateAccept30Card(String info,int money){
+        Log.d(TAG, "onNotificationPosted ~ " + "updateAccept30Card : "+info + " "+money);
+        Card30 kind = null;
+        if(info.equals("KB비씨")){
+            kind = Card30.KB;
+            Log.d(TAG, "onNotificationPosted ~ " + "잘들어왔네" + kind.getValue());
+            card30[kind.getValue()]+= money;
+        }else
+            Log.d(TAG, "onNotificationPosted ~ " + "다름");
+    }
     int getWeekOfYear(String date) {//일~토
         //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.KOREA);
         Calendar calendar = Calendar.getInstance();
